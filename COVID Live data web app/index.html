@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>COVID Live data</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>COVID-19 Data</h1>
+        <div class="form">
+            <form action="">
+                <input type="text" name="countryInput" id="country" placeholder="Country Name" required>
+                <button value="Get Data">Get Data</button>
+            </form>
+
+        </div>
+
+        <h2 id="resultCountry">Country: </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="firstRow">
+                    <section id="dailySection">
+                        <td class="cellone">
+                            <div id="confirmedToday">Todays cases: </div>
+                        </td>
+                        <td class="celltwo">
+                            <div id="deathsToday">Todays deaths: </div>
+                        </td>
+                    </section>
+                </tr>
+                <tr class="secondRow">
+                    <section id="totalSection">
+                        <td class="cellthree">
+                            <div id="totalConfirmed">Total confirmed cases: </div>
+                        </td>
+                        <td class="cellfour">
+                            <div id="totalDeaths">Total deaths: </div>
+                        </td>
+                    </section>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+        <div>
+            <p>COVID-19 data webapp created by Mohamed Amoudi, credit to <a
+                    href="https://covid19api.com/">https://covid19api.com/</a> for providing their free API. Data is
+                sourced from <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins CSSE.</a></p>
+        </div>
+    </div>
+
+    <div class="countriesList">
+        <div class="inline-block">
+            <ul class="listOne"></ul>
+        </div>
+        <div class="inline-block">
+            <ul class="listTwo"></ul>
+        </div>
+        <div class="inline-block">
+            <ul class="listThree"></ul>
+        </div>
+        <div class="inline-block">
+            <ul class="listFour"></ul>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+        integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
